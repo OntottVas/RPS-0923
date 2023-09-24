@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>NPC choice: </h1>
+<h1 th:text="${game.getComputerChoice()}"></h1>
+<h1>Player choice: </h1>
+<h1 th:text="${game.getPlayerChoice()}"></h1>
+<h1>Winner: </h1>
+<h1 th:text="${game.getChickenDinner()}"></h1>
+<a th:href="@{/home}">
+<button type="submit">DONE</button>
+</a>
+</body>
+</html>
